@@ -5,8 +5,12 @@ import java.util.List;
 public interface Instructor extends Worker {
 
     void teachStudents(List<Student> students);
-    
-    Student expell();
-    
+
+    List<Student> expell();
+
     String getCourseName();
+
+    default String getName() {
+        return "Vassia";
+    }
 }
